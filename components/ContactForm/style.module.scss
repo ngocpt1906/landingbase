@@ -1,0 +1,51 @@
+.WrapContactForm {
+  max-width: 1200px;
+  margin: auto;
+  .Image {
+    width: auto;
+    height: 96px;
+  }
+  .FormWrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    padding: 24px;
+    .WrapSubmit {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    label {
+      padding-top: 24px;
+      padding-bottom: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    input {
+      padding: 8px;
+      font-size: 24px;
+    }
+    Button,
+    Button:hover {
+      border-radius: 0;
+      background-color: #0b0b85;
+      color: white;
+      font-weight: bold;
+      border: none;
+    }
+  }
+  .WrapContactInfo {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    .EmailAndPhone {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-style: italic;
+    }
+  }
+}

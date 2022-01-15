@@ -1,0 +1,80 @@
+.WrapHeadBlock {
+  min-height: 90vh;
+  text-align: center;
+  padding-top: 20vh;
+  position: relative;
+
+  &:after {
+    content: "";
+    background-image: url(/bg.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    background-size: cover;
+  }
+  .HeadText {
+    font-family: monospace;
+    font-size: 108px;
+    color: #0b0b85;
+    font-weight: bold;
+    // text-shadow: 6px 6px #999;
+  }
+  .FirstTitle {
+    padding-top: 10vh;
+    font-size: 32px;
+    color: #0b0b85;
+  }
+  .SecondaryTitle {
+    margin: auto;
+    max-width: 520px;
+    padding-top: 20vh;
+    font-size: 24px;
+    color: #0b0b85;
+  }
+  &.Compact {
+    padding-top: 10vh;
+    min-height: 20vh;
+    .FirstTitle {
+      padding-top: 5vh;
+    }
+    .SecondaryTitle {
+      max-width: 520px;
+      padding-top: 5vh;
+    }
+  }
+  .Corner {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==");
+    background-size: 100% 100%;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  // .Corner:after {
+  //   width: 0;
+  //   height: 0;
+  //   border-style: solid;
+  //   border-width: 0 0 100px 100px;
+  //   border-color: transparent transparent #ffffff transparent;
+  //   position: absolute;
+  // }
+  @media (max-width:768px) {
+    .HeadText {
+      font-size: 48px;
+    }
+    .SecondaryTitle {
+      max-width: 320px;
+      font-size: 18px
+    }
+    .FirstTitle {
+      padding-top: 5vh;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.WrapBlogsGrid {
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 120px;
+  margin: 0px auto !important;
+  max-width: 1200px;
+  .BlogBlock {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 1s;
+    position: relative;
+    min-height: 240px;
+    cursor: pointer;
+    // &:hover {
+    //   border-right: 2px solid #fff;
+    //   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    // }
+    a:hover {
+      color: #0b0b85;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .Content {
+      padding: 16px;
+      background: rgba(235, 235, 235, 0.8);
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      .ContentText {
+        overflow: hidden;
+        max-height: 80px;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        p {
+          margin-bottom: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3; /* number of lines to show */
+          -webkit-box-orient: vertical;
+        }
+      }
+      .ContentDate {
+        padding-top: 0px;
+        color: #666;
+        text-align: right;
+        height: 32px;
+        line-height: 40px;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.WrapFooter {
+  background-color: #0b0b85;
+  .FooterContent {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    .Buttons {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 30%;
+      :global(img) {
+        width: 50%;
+      }
+    }
+    .Branch {
+      color: #fff;
+      font-size: 14px;
+      line-height: 80px;
+      text-align: center;
+    }
+  }
+}

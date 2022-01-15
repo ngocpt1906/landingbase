@@ -1,0 +1,121 @@
+.WrapHeaderMenu {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+
+  :global(.ant-menu) {
+    width: 100%;
+  }
+
+  .Image {
+    height: 64px;
+    width: auto;
+  }
+
+  .HeaderMenuInside {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    :global(.ant-menu) {
+      color: #000;
+      background: none;
+      text-align: right;
+      border-bottom: none;
+
+      :global(.ant-menu-item):hover,
+      :global(.ant-menu-item-selected) {
+        background-color: unset;
+      }
+
+      :global(.ant-menu-item a) {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 64px;
+        text-transform: capitalize;
+      }
+    }
+
+    :global(.ant-menu-item) {
+      a {
+        color: #0b0b85 !important;
+      }
+    }
+
+    :global(.ant-menu-item-active) {
+      a {
+        color: #0b0b85 !important;
+      }
+
+      border-color: #0b0b85 !important;
+    }
+  }
+
+  .MenuPC {
+    display: block;
+  }
+
+  .MenuMobile {
+    display: none;
+    :global(.anticon){
+      font-size: 32px;
+      line-height: 64px;
+      padding-right: 12px;
+      cursor: pointer;
+    }
+  }
+  
+
+  @media (max-width:768px) {
+    .MenuPC {
+      display: none;
+    }
+    .MenuMobile{
+      display: block;
+    }
+  }
+}
+
+.WrapDrawer{
+  z-index: 100000;
+  .Image{
+    width: 240px;
+    margin: auto;
+  }
+  :global(.ant-menu) {
+    color: #000;
+    background: none;
+    text-align: left;
+    border-bottom: none;
+
+    :global(.ant-menu-item):hover,
+    :global(.ant-menu-item-selected) {
+      background-color: unset;
+    }
+
+    :global(.ant-menu-item a) {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 64px;
+      text-transform: capitalize;
+    }
+  }
+
+  :global(.ant-menu-item) {
+    a {
+      color: #0b0b85 !important;
+    }
+  }
+
+  :global(.ant-menu-item-active) {
+    a {
+      color: #0b0b85 !important;
+    }
+
+    border-color: #0b0b85 !important;
+  }
+}
