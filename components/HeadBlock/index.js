@@ -16,7 +16,7 @@ const HeadBlock = ({ compact, text }) => {
       <ReactTypingEffect
         speed={200}
         typingDelay={1000}
-        text={["TechSearch"]}
+        text={["Landing"]}
         // staticText="Tech Search"
         className={styles.HeadText}
       />

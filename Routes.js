@@ -7,39 +7,31 @@ export const Routes = [
     hiddenFromMenu: false
   },
   {
-    key:"aboutus",
-    name: "About Us",
-    path: "/aboutus",
+    key:"menu1",
+    name: "Menu 1",
+    path: "/",
     exact: true,
     hiddenFromMenu: false
   },
   {
-    key:"services",
-    name: "Services",
-    path: "/services",
+    key:"menu2",
+    name: "Menu 2",
+    path: "/",
     exact: true,
     hiddenFromMenu: false
   },
   {
-    key:"blogs",
-    name: "Blogs",
-    path: "/blogs",
+    key:"menu3",
+    name: "Menu 3",
+    path: "/",
     exact: true,
     hiddenFromMenu: false
   },
   {
-    key:"testimonial",
-    name: "Testimonial",
-    path: "/testimonial",
+    key:"menu4",
+    name: "Menu 4",
+    path: "/",
     exact: true,
     hiddenFromMenu: false
   },
-  {
-    key:"contactus",
-    name: "Contact Us",
-    path: "/contactus",
-    exact: true,
-    hiddenFromMenu: false
-  },
-  
 ]

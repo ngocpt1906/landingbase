@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Table, Drawer, Input } from "antd";
-import { Layout, Menu } from 'antd';
+import React, { useState } from 'react';
+import { Drawer } from "antd";
+import { Menu } from 'antd';
 import Link from 'next/link';
 import { Routes } from "../../Routes";
 import {
@@ -22,7 +22,7 @@ const HeaderMenu = () => {
           className={styles.Image}
         ></img>
         <Menu theme="light" mode="horizontal" className={styles.MenuPC}>
-          {Routes?.map(e => <Menu.Item key={e.path} hidden={e.hiddenFromMenu}><Link href={useRouterLink(e.path)}>{e.name}</Link></Menu.Item>)}
+          {Routes?.map(e => <Menu.Item key={e.key} hidden={e.hiddenFromMenu}><Link href={useRouterLink(e.path)}>{e.name}</Link></Menu.Item>)}
         </Menu>
         <div className={styles.MenuMobile}>
           <MenuOutlined onClick={toggleMenu} />
@@ -37,7 +37,7 @@ const HeaderMenu = () => {
             className={styles.WrapDrawer}
           >
             <Menu theme="light" mode="vertical">
-              {Routes?.map(e => <Menu.Item key={e.path} hidden={e.hiddenFromMenu}><Link href={useRouterLink(e.path)}>{e.name}</Link></Menu.Item>)}
+              {Routes?.map(e => <Menu.Item key={e.key} hidden={e.hiddenFromMenu}><Link href={useRouterLink(e.path)}>{e.name}</Link></Menu.Item>)}
             </Menu>
           </Drawer>
         </div>

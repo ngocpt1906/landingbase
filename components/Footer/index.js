@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Table, Drawer, Input } from "antd";
-import {
-  EditOutlined,
-  DeleteOutlined
-} from '@ant-design/icons';
+import React from 'react';
+
 import styles from './style.module.scss';
-import HeaderMenu from '../HeaderMenu';
 
 const Footer = () => {
   return (
     <div className={styles.WrapFooter}>
       <div className={styles.FooterContent}>
-        <div className={styles.Branch}>2021 - Tech Search - Melbourne</div>
+        <div className={styles.Branch}>2021 - Landing - Ha Noi</div>
       </div>
     </div>
   );
